@@ -586,12 +586,8 @@ void main (void)
 		{	printf("\x1B[1;1H");
 			ADC_get();
 			vd=v2-v0;
-			printf("\x1B[12;1H");
-			printf("vd=%5.3f", vd);
 			if(vd<0){
 				vd=v0-v2;
-			printf("\x1B[13;1H");
-			printf("vd=%5.3f", vd);
 			}
 			if(v3<=0.01&&(v0<=0.01||v2<=0.01)) {
 				count = 0;
