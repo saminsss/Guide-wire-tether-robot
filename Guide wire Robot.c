@@ -239,161 +239,161 @@ void LCDprint(char * string, unsigned char line, bit clear)
 }
 
 void Turn_left(void){
-			wave1=10;
-			wave2=0;
-			wave3=70;
-			wave4=0;
-			LCDprint("Turning Right", 1, 1);
-			LCDprint("RPM = 20.1", 2, 1);
+	wave1=10;
+	wave2=0;
+	wave3=70;
+	wave4=0;
+	LCDprint("Turning Right", 1, 1);
+	LCDprint("RPM = 20.1", 2, 1);
 }
 
 void Turn_right(void){
-			wave1=70;
-			wave2=0;
-			wave3=10;
-			wave4=0;
-			LCDprint("Turning Left", 1, 1);
-			LCDprint("RPM = 20.1", 2, 1);
+	wave1=70;
+	wave2=0;
+	wave3=10;
+	wave4=0;
+	LCDprint("Turning Left", 1, 1);
+	LCDprint("RPM = 20.1", 2, 1);
 }
 
 void Go_straight(void){
-			wave1=70;
-			wave2=0;
-			wave3=70;
-			wave4=0;
-			LCDprint("Going Straight", 1, 1);
-			LCDprint("RPM = 23", 2, 1);
+	wave1=70;
+	wave2=0;
+	wave3=70;
+	wave4=0;
+	LCDprint("Going Straight", 1, 1);
+	LCDprint("RPM = 23", 2, 1);
 		
 }
 
 void Rotate_180(void){
-			wave1=70;
-			wave2=0;
-			wave3=0;
-			wave4=70;
-			LCDprint("Rotating", 1, 1);
-			LCDprint("RPM = 18", 2, 1);
-			waitms(1300);
+	wave1=70;
+	wave2=0;
+	wave3=0;
+	wave4=70;
+	LCDprint("Rotating", 1, 1);
+	LCDprint("RPM = 18", 2, 1);
+	waitms(1300);
 			
 }
 
 void STOP(void) {
-			wave1=0;
-			wave2=0;
-			wave3=0;
-			wave4=0;
-			LCDprint("Halt", 1, 1);
-			LCDprint("RPM: 0", 2, 1);
+	wave1=0;
+	wave2=0;
+	wave3=0;
+	wave4=0;
+	LCDprint("Halt", 1, 1);
+	LCDprint("RPM: 0", 2, 1);
 }
 
 void Turn_right_reverse(void){
-			wave1=0;
-			wave2=50;
-			wave3=0;
-			wave4=20;
-			LCDprint("Turning Right", 1, 1);
-			LCDprint("RPM: 15.6", 2, 1);
+	wave1=0;
+	wave2=50;
+	wave3=0;
+	wave4=20;
+	LCDprint("Turning Right", 1, 1);
+	LCDprint("RPM: 15.6", 2, 1);
 		
 
 }
 
 void Turn_right_reverse1(void){
-			wave1=0;
-			wave2=90;
-			wave3=0;
-			wave4=30;
-			LCDprint("Parallel Parking", 1, 1);
-			LCDprint("RPM: 26.4", 2, 1);
+	wave1=0;
+	wave2=90;
+	wave3=0;
+	wave4=30;
+	LCDprint("Parallel Parking", 1, 1);
+	LCDprint("RPM: 26.4", 2, 1);
 		
 
 }
 
 void Turn_left_reverse(void){
-			wave1=0;
-			wave2=20;
-			wave3=0;
-			wave4=50;
-			LCDprint("Turning Left", 1, 1);
-			LCDprint("RPM: 15.6", 2, 1);
+	wave1=0;
+	wave2=20;
+	wave3=0;
+	wave4=50;
+	LCDprint("Turning Left", 1, 1);
+	LCDprint("RPM: 15.6", 2, 1);
 	
 }
 void Turn_left_reverse1(void){
-			wave1=0;
-			wave2=30;
-			wave3=0;
-			wave4=90;
-			LCDprint("Parallel Parking", 1, 1);
-			LCDprint("RPM: 26.8", 2, 1);
+	wave1=0;
+	wave2=30;
+	wave3=0;
+	wave4=90;
+	LCDprint("Parallel Parking", 1, 1);
+	LCDprint("RPM: 26.8", 2, 1);
 	
 }
 
 void Go_straight_reverse(void){
-			wave1=0;
-			wave2=40;
-			wave3=0;
-			wave4=40;
-			LCDprint("Going Reverse", 1, 1);
-			LCDprint("RPM: 14.6", 2, 1);
+	wave1=0;
+	wave2=40;
+	wave3=0;
+	wave4=40;
+	LCDprint("Going Reverse", 1, 1);
+	LCDprint("RPM: 14.6", 2, 1);
 		
 }
 
 void Go_straight_reverse1(void){
-			wave1=0;
-			wave2=100;
-			wave3=0;
-			wave4=100;
-			LCDprint("Parallel Parking", 1, 1);
-			LCDprint("RPM: 28.5", 2, 1);
+	wave1=0;
+	wave2=100;
+	wave3=0;
+	wave4=100;
+	LCDprint("Parallel Parking", 1, 1);
+	LCDprint("RPM: 28.5", 2, 1);
 		
 }
 
 void Reverse(void){
-		if(v0>v2&&vd>TURN_VOLT&&v1<=INTERSECTION_VOLT){
-			Turn_right_reverse();
-			Go_straight_reverse();
-			waitms(50);
-		}
-		if(v2>v0&&vd>TURN_VOLT&&v1<=INTERSECTION_VOLT){
-			Turn_left_reverse();
-			Go_straight_reverse();
-			waitms(50);
-		}
-		if((v0==v2||vd<=TURN_VOLT)&&v1<=INTERSECTION_VOLT){
-			Go_straight_reverse();
-		}	
+	if(v0>v2&&vd>TURN_VOLT&&v1<=INTERSECTION_VOLT){
+		Turn_right_reverse();
+		Go_straight_reverse();
+		waitms(50);
+	}
+	if(v2>v0&&vd>TURN_VOLT&&v1<=INTERSECTION_VOLT){
+		Turn_left_reverse();
+		Go_straight_reverse();
+		waitms(50);
+	}
+	if((v0==v2||vd<=TURN_VOLT)&&v1<=INTERSECTION_VOLT){
+		Go_straight_reverse();
+	}	
 }
 
 void normal_logic(void){
 		//Turning Logic independent of encodings
-		if(v0>v2&&vd>TURN_VOLT&&v1<=INTERSECTION_VOLT){
-			Turn_left();
-		}
-		if(v2>v0&&vd>TURN_VOLT&&v1<=INTERSECTION_VOLT){
-			Turn_right();
-		}
-		if((v0==v2||vd<=TURN_VOLT)&&v1<=INTERSECTION_VOLT){
-			Go_straight();
-		}
+	if(v0>v2&&vd>TURN_VOLT&&v1<=INTERSECTION_VOLT){
+		Turn_left();
+	}
+	if(v2>v0&&vd>TURN_VOLT&&v1<=INTERSECTION_VOLT){
+		Turn_right();
+	}
+	if((v0==v2||vd<=TURN_VOLT)&&v1<=INTERSECTION_VOLT){
+		Go_straight();
+	}
 }
 
 void count_normal(void){
 	while(v3<=0.01&&(v0<=0.01||v2<=0.01)){
-			count = 0;
-			while(v3<=0.01&&(v0<=0.01||v2<=0.01)){
-			printf("\x1B[1;1H");
-			ADC_get();
-			if(v3<=0.01&&(v0<=0.01||v2<=0.01)){
-				normal_logic();
-				count++;
-			}
-			else {
-				printf("\x1B[21;1H");
-				printf("Counter: %d\r\n", count);
-				//break;
-			}
+		count = 0;
+		while(v3<=0.01&&(v0<=0.01||v2<=0.01)){
+		printf("\x1B[1;1H");
+		ADC_get();
+		if(v3<=0.01&&(v0<=0.01||v2<=0.01)){
+			normal_logic();
+			count++;
 		}
+		else {
+			printf("\x1B[21;1H");
+			printf("Counter: %d\r\n", count);
+			//break;
+		}
+	}
 		//break;
-		}
+}
 }
 
 
