@@ -1,5 +1,5 @@
 
-//  Copyright (c) 01-APR-2017 Samin Islam LOLOLOL
+//  Copyright (c) 01-APR-2017 Samin Islam
 //  ~C51~
 
 #include <C8051F38x.h>
