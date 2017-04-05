@@ -29,12 +29,11 @@ couple of inductive sensors and determines its position from the magnetic field 
 by the guide wire adjusting its position accordingly. Additionally, the guide wire
 controller/transmitter must be able to send commands to the robot via the generated
 magnetic field. Your design must support at least these six commands:
-1) Stop. This command instructs the robot to stop moving.
-2) Next intersection, turn right. This command instructs the robot to turn right
-after it detects the next intersection.
-3) Next intersection, turn left. This command instructs the robot to turn left after
-it detects the next intersection.
-4) Move Forward. This command instructs the robot to start moving forward.
-5) Move Backward. This command instructs the robot to start moving backward.
-6) Rotate 180o
-.
+      1) Stop. This command instructs the robot to stop moving.
+      2) Next intersection, turn right. This command instructs the robot to turn right
+      after it detects the next intersection.
+      3) Next intersection, turn left. This command instructs the robot to turn left after
+      it detects the next intersection.
+      4) Move Forward. This command instructs the robot to start moving forward.
+      5) Move Backward. This command instructs the robot to start moving backward.
+      6) Rotate 180 degrees
