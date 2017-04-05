@@ -1,4 +1,4 @@
-# Guide-wire-tether-robot
+# Guide-wire-controlled-robot
 A car that follows a wire based on the magnetic field produced by the wire
 
 Introduction: design, build, program, and test a
